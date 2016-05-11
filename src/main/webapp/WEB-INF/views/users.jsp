@@ -100,6 +100,7 @@ Find user by name:
     <input type="text" name="username">
     <input type="submit"
            value="<spring:message text="Find"/>"  />
+    <a href="/users">Show All Users</a>
 </form:form>
 <%------------------Start user list-----------------------%>
 <br>
