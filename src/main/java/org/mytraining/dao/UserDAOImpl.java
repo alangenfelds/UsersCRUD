@@ -73,8 +73,8 @@ public class UserDAOImpl implements UserDAO{
     public List<User> listUsersByName(String name) {
         Session session = this.sessionFactory.getCurrentSession();
 
-        //String hql = "from User U where U.name = '"+name+"'";
-        String hql = "from User U where U.name like '"+name+"%'";
+        String hql = "from User U where U.name = '"+name+"'";
+        //String hql = "from User U where U.name like '"+name+"%'";
 
 
         List<User> userList = session.createQuery(hql).list();
