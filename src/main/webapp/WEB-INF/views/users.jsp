@@ -18,7 +18,7 @@
     Add a User
 </h1>
 
-<c:url var="addAction" value="/users/add/${pagedListHolder.page}" ></c:url>
+<c:url var="addAction" value="/users/add/${pagedListHolder.lastLinkedPage}" ></c:url>
 
 <form:form action="${addAction}" commandName="user">
     <table style="border-spacing: 5px; border-collapse:collapse">
