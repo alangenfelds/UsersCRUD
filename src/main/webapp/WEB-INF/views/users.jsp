@@ -81,7 +81,7 @@
             <td colspan="2" style="padding-top: .2em;padding-bottom: .2em">
                 <c:if test="${!empty user.name}">
                     <input type="submit"
-                           value="<spring:message text="Update User"/>"  />
+                           value="<spring:message text="Update User"/>" formaction="/users/add/${pagedListHolder.page}" />
                     <input type="button" value="Cancel" onclick="window.history.back()" />
                 </c:if>
                 <c:if test="${empty user.name}">
